@@ -1,14 +1,17 @@
 __author__ = 'gcalinescu'
 import os
+import time
 import shutil
-def rename_files():
+from random import randint
+
+def unscramble_message():
     #(1) get teh file names from a folder
     target_path = os.getcwd()
     #(!) For windows use backslash like 'this '\prank'
     file_list = os.listdir(target_path + "/prank")
     #print=(file_list)
     print("Current working directory is: "+target_path)
-    os.chdir(target_path+"\prank")
+    os.chdir(target_path+'/prank')
     #(2) for each file rename filename
     for file_name in file_list:
         print("Old name - "+file_name)
@@ -18,8 +21,8 @@ def rename_files():
 
 def create_message():
     #(1) define the secret message
-    secret_message = "HELLO THERE"
-    #(2) clear directoryprank of any old files
+    secret_message = "HELLO THERE TO EVERYONE AT UDACITY"
+    #(2) clear directory prank of any old files
     target_path = os.getcwd()
     os.chdir(target_path+"/prank")
     for files_to_remove in os.listdir(target_path + "/prank"):
@@ -31,29 +34,35 @@ def create_message():
     file_name_letter = alphabet_files[1]
     print(file_name_letter)
     #(4) translate secret message to numbers, using 'ord()'
-    #exception is the space trap the '-64' and replace it with 'madrid.jpg'
-    #   print alphabet_files
+    # exception is 'space' trap the '-64' and replace it with 'madrid.jpg'
+    # also create an index so you can add an extra letter to the file name
+    # so it orders alphabetically. LastLY add a random number in front oF the
+    # file name
     alphabet_folder = target_path+"/alphabet/"
     prank_folder = target_path+"/prank/"
     index_counter = 1
     for letter in secret_message:
+        # rnd number + increment alpha to scramble the files order, for
+        # messages only up to 48 characters
+        if index_counter <= 24:
+            prefix_addition = str(randint(10,  39)) + (chr(96 + index_counter))
+        else:
+            prefix_addition = str(randint(10,  39)) + (chr(121)) + (chr(96 + (index_counter - 24)))
+
+        #get the letter number
         letter_number = ord(letter.lower()) - 96
         if letter_number == -64:
             letter_file_name = 'madrid.jpg'
-            print letter_file_name
-            shutil.copyfile(alphabet_folder+letter_file_name, prank_folder+(chr(96 + index_counter) + letter_file_name))
+            shutil.copyfile(alphabet_folder+letter_file_name, prank_folder+prefix_addition+letter_file_name)
         else:
-            print(alphabet_files[letter_number - 1])
-            print(letter)
-            print(letter_number)
             letter_file_name = alphabet_files[letter_number - 1]
-            shutil.copyfile(alphabet_folder+letter_file_name, prank_folder+(chr(96 + index_counter) + letter_file_name))
+            shutil.copyfile(alphabet_folder+letter_file_name, prank_folder+prefix_addition+letter_file_name)
         index_counter += 1
-
-
-
-        #print numerical_message
+    os.chdir(target_path)
+    print(index_counter)
 
 create_message()
 
-#rename_files()
+time.sleep(10)
+
+unscramble_message()
