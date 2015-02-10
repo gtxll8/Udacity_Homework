@@ -15,4 +15,21 @@ def rename_files():
         os.rename(file_name, file_name.translate(None, "0123456789"))
     os.chdir(target_path)
 
-rename_files()
+
+
+def create_message():
+
+    #(1) define the secret message
+    secret_message = "HELLO THERE"
+
+    #(2) clear directory prank of any old files
+    target_path = os.getcwd()
+    os.chdir(target_path+"\prank")
+    for files_to_remove in os.listdir(target_path + "\prank"):
+        print(files_to_remove)
+        os.remove(files_to_remove)
+
+
+create_message()
+
+#rename_files()
