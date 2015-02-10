@@ -1,7 +1,6 @@
 __author__ = 'gcalinescu'
 import os
 def rename_files():
-
     #(1) get teh file names from a folder
     target_path = os.getcwd()
     file_list = os.listdir(target_path + "\prank")
@@ -15,13 +14,9 @@ def rename_files():
         os.rename(file_name, file_name.translate(None, "0123456789"))
     os.chdir(target_path)
 
-
-
 def create_message():
-
     #(1) define the secret message
     secret_message = "HELLO THERE"
-
     #(2) clear directory prank of any old files
     target_path = os.getcwd()
     os.chdir(target_path+"\prank")
