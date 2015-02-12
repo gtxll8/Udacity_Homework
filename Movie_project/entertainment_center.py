@@ -40,8 +40,8 @@ intodarkness = media.Movie("Star trek into Drakness","A series of terrorist atta
 #chapie.show_trailer()
 movies = [chapie, bighero, intodarkness]
 
-#fresh_tomatoes.open_movies_page(movies)
+fresh_tomatoes.open_movies_page(movies)
 
-print media.Movie.__module__
+#print media.Movie.__module__
 
 #http://runnable.com/UrsbALlVym08AADR/built-in-attributes-of-a-class-in-python
