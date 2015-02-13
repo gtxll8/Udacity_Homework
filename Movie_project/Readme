@@ -1,0 +1,19 @@
+This is the first project from Udacity's Full Stack course  - Feb 2015
+
+Requirements :
+ - Python 2.7 installation on a Windows Mac or Linux PC
+
+Installation:
+ - Unzip or copy all 3 files into a folder then run
+ file called : 'entertainment_center.py'
+
+ This will generate an html file in the same folder
+ called : "fresh_tomatoes.html" which will automatically
+ be opened by the program.
+
+ You can also call this file from the command line :
+ (example for windows)
+ "C:\YourFolder\python entertainment_center.py"
+
+Known Browser compatibility:
+ IE,9,10;Firefox 35.0.1,Chrome Version 40.0.2214.111 m, Safari
