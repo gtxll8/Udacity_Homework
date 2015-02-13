@@ -87,6 +87,7 @@ main_page_content = '''
 <!DOCTYPE html>
 <html lang="en">
   <body>
+
     <!-- Trailer Video Modal -->
     <div class="modal" id="trailer">
       <div class="modal-dialog">
@@ -101,28 +102,73 @@ main_page_content = '''
     </div>
     
     <!-- Main Page Content -->
-    <div class="container">
-      <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="#">Fresh Tomatoes Movie Trailers</a>
+ <div class="navbar-wrapper">
+       <div class="navbar-header">
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">George's recommended movies</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Contact<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                  <li><a href="mailto:george@chessborg.com">Send me an email</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Review websites<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="http://www.rottentomatoes.com/">Rottentomatoes</a></li>
+                    <li><a href="http://www.metacritic.com/movie">Metacritic</a></li>
+                    <li><a href="http://www.jinni.com/">Jinni</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">Official movie database</li>
+                    <li><a href="www.imdb.com">Imdb</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
+
       </div>
     </div>
-    <div class="container">
+  <div class="container">
       {movie_tiles}
-    </div>
-  </body>
+  </div>
+
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2014 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
+
+    </div><!-- /.container -->
+   </body>
 </html>
 '''
 
 # A single movie entry html template
 movie_tile_content = '''
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
-    <img src="{poster_image_url}" width="220" height="342">
-    <h2>{movie_title}</h2>
-</div>
+
+        <div class="col-md-7">
+          <h2 class="featurette-heading">{movie_title}</h2>
+          <h6 class="lead">{storyline}</h6>
+        </div>
+        <div class="movie-tile" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
+          <img src="{poster_image_url}" width="220" height="342">
+        </div>
+
 '''
 
 def create_movie_tiles_content(movies):
@@ -138,7 +184,8 @@ def create_movie_tiles_content(movies):
         content += movie_tile_content.format(
             movie_title=movie.title,
             poster_image_url=movie.poster_image_url,
-            trailer_youtube_id=trailer_youtube_id
+            trailer_youtube_id=trailer_youtube_id,
+            storyline=movie.storyline
         )
     return content
 
