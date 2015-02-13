@@ -1,5 +1,5 @@
 # Udacity_Homework
-home_work
+
 Hi my name is George Calinescu and am a student enrolled
 into the Full Stack Nanodegree course at Udacity.
 
