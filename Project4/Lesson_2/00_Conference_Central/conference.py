@@ -116,12 +116,12 @@ class ConferenceApi(remote.Service):
             path='profile', http_method='POST', name='saveProfile')
     def saveProfile(self, request):
         """Update & return user profile."""
-        prof = Profile()
-        prof.displayName = request.displayName
-        prof.teeShirtSize = request.teeShirtSize
-
-        return self._doProfile(save_request=prof)
-
+        # I did try this way as I did not realise you can pass on the request directly
+        # profile = ProfileForm()
+        # profile.displayName = request.displayName
+        # profile.teeShirtSize = request.teeShirtSize
+        # return self._doProfile(save_request=profile)
+        return self._doProfile(request)
 
 # registers API
 api = endpoints.api_server([ConferenceApi]) 
