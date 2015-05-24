@@ -127,7 +127,6 @@ class ConferenceApi(remote.Service):
 
 
 # - - - Conference objects - - - - - - - - - - - - - - - - - - -
-# - - - Conference objects - - - - - - - - - - - - - - - - -
 
     def _copyConferenceToForm(self, conf, displayName):
         """Copy relevant fields from Conference to ConferenceForm."""
