@@ -107,13 +107,13 @@ class ConferenceApi(remote.Service):
                         setattr(prof, field, str(val))
             # TODO 4
             # put the modified profile to datastore
-            profile.put()
+                        prof.put()
 
         # return ProfileForm
         return self._copyProfileToForm(prof)
 
 
-    @endpoints.method(message_types.VoidMessage, ProfileForm,
+    @endpoints.method(ProfileMiniForm, ProfileForm,
             path='profile', http_method='GET', name='getProfile')
     def getProfile(self, request):
         """Return user profile."""
