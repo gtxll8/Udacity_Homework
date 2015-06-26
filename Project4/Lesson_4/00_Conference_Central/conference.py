@@ -36,6 +36,14 @@ from models import ConferenceForms
 from models import ConferenceQueryForm
 from models import ConferenceQueryForms
 
+from models import BooleanMessage
+from models import ConflictException
+
+CONF_GET_REQUEST = endpoints.ResourceContainer(
+    message_types.VoidMessage,
+    websafeConferenceKey=messages.StringField(1),
+)
+
 DEFAULTS = {
     "city": "Default City",
     "maxAttendees": 0,
