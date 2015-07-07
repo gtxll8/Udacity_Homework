@@ -342,7 +342,7 @@ class ConferenceApi(remote.Service):
         )
 
     # - - - Registration - - - - - - - - - - - - - - - - - - - -
-
+    @ndb.transactional(xg=True)
     def _conferenceRegistration(self, request, reg=True):
         """Register or unregister user for selected conference."""
         retval = None
