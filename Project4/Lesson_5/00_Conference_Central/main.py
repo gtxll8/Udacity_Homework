@@ -27,7 +27,7 @@ class SetAnnouncementHandler(webapp2.RequestHandler):
         # TODO 1
 
 
-        announcement = '%s %s' % ( 'Last chance to attend!')
+        announcement =  'Last chance to attend!'
         memcache.set(MEMCACHE_ANNOUNCEMENTS_KEY, announcement)
 
 class SendConfirmationEmailHandler(webapp2.RequestHandler):
