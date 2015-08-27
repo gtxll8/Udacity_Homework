@@ -15,20 +15,13 @@ __author__ = 'wesc+api@google.com (Wesley Chun)'
 import webapp2
 from google.appengine.api import app_identity
 from google.appengine.api import mail
-from google.appengine.api import memcache
-from models import Conference
-from google.appengine.ext import ndb
 MEMCACHE_ANNOUNCEMENTS_KEY = "RECENT_ANNOUNCEMENTS"
 from conference import ConferenceApi
 
 class SetAnnouncementHandler(webapp2.RequestHandler):
     def get(self):
         """Set Announcement in Memcache."""
-        # TODO 1
-
-
-        announcement =  'Last chance to attend!'
-        memcache.set(MEMCACHE_ANNOUNCEMENTS_KEY, announcement)
+        ConferenceApi._cacheAnnouncement()
 
 class SendConfirmationEmailHandler(webapp2.RequestHandler):
     def post(self):
