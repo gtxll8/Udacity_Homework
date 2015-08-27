@@ -39,6 +39,7 @@ from utils import getUserId
 from settings import WEB_CLIENT_ID
 from google.appengine.api import memcache
 from models import StringMessage
+from google.appengine.api import taskqueue
 
 EMAIL_SCOPE = endpoints.EMAIL_SCOPE
 API_EXPLORER_CLIENT_ID = endpoints.API_EXPLORER_CLIENT_ID
@@ -153,7 +154,10 @@ class ConferenceApi(remote.Service):
         # create Conference, send email to organizer confirming
         # creation of Conference & return (modified) ConferenceForm
         Conference(**data).put()
-        # TODO 2: add confirmation email sending task to queue
+        taskqueue.add(params={'email': user.email(),
+            'conferenceInfo': repr(request)},
+            url='/tasks/send_confirmation_email'
+        )
 
         return request
 
