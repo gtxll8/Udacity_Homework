@@ -25,15 +25,9 @@ class SetAnnouncementHandler(webapp2.RequestHandler):
     def get(self):
         """Set Announcement in Memcache."""
         # TODO 1
-        confs = Conference.query(ndb.AND(
-            Conference.seatsAvailable <= 5,
-            Conference.seatsAvailable > 0)
-        ).fetch(projection=[Conference.name])
 
-        announcement = '%s %s' % (
-                'Last chance to attend! The following conferences '
-                'are nearly sold out:',
-                ', '.join(conf.name for conf in confs))
+
+        announcement = '%s %s' % ( 'Last chance to attend!')
         memcache.set(MEMCACHE_ANNOUNCEMENTS_KEY, announcement)
 
 class SendConfirmationEmailHandler(webapp2.RequestHandler):
