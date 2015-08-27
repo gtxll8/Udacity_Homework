@@ -17,6 +17,7 @@ from google.appengine.api import app_identity
 from google.appengine.api import mail
 from google.appengine.api import memcache
 from models import Conference
+from google.appengine.ext import ndb
 MEMCACHE_ANNOUNCEMENTS_KEY = "RECENT_ANNOUNCEMENTS"
 from conference import ConferenceApi
 
