@@ -524,10 +524,8 @@ class ConferenceApi(remote.Service):
         """Return Announcement from memcache."""
         # TODO 1
         # return an existing announcement from Memcache or an empty string.
-        message = memcache.get(MEMCACHE_ANNOUNCEMENTS_KEY)
-        if message:
-            announcement = message
-        else:
+        announcement = memcache.get(MEMCACHE_ANNOUNCEMENTS_KEY)
+        if not announcement:
             announcement = ""
         return StringMessage(data=announcement)
 
