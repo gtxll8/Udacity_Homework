@@ -38,6 +38,10 @@ handlers:       # static then dynamic
   script: main.app
   login: admin
 
+- url: /tasks/send_confirmation_email
+  script: main.app
+  login: admin
+
 libraries:
 
 - name: webapp2
@@ -49,3 +53,8 @@ libraries:
 # pycrypto library used for OAuth2 (req'd for authenticated APIs)
 - name: pycrypto
   version: latest
+
+cron:
+- description: Repopulate the announcement every 1 hour
+  url: /crons/set_announcement
+  schedule: every 1 hours
