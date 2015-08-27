@@ -16,13 +16,18 @@ import webapp2
 from google.appengine.api import app_identity
 from google.appengine.api import mail
 from google.appengine.api import memcache
+MEMCACHE_ANNOUNCEMENTS_KEY = "RECENT_ANNOUNCEMENTS"
 from conference import ConferenceApi
 
 class SetAnnouncementHandler(webapp2.RequestHandler):
     def get(self):
         """Set Announcement in Memcache."""
         # TODO 1
-        memcache.set('RECENT_ANNOUNCEMENTS', 'Hello there !')
+        announcement = '%s %s' % (
+                'Last chance to attend! The following conferences '
+                'are nearly sold out:',
+                ', '.join(conf.name for conf in confs))
+        memcache.set(MEMCACHE_ANNOUNCEMENTS_KEY, announcement)
 
 class SendConfirmationEmailHandler(webapp2.RequestHandler):
     def post(self):
