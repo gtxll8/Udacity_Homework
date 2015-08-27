@@ -21,7 +21,7 @@ class SetAnnouncementHandler(webapp2.RequestHandler):
     def get(self):
         """Set Announcement in Memcache."""
         # TODO 1
-        memcache.set("RECENT", "Hello there !")
+        memcache.set("RECENT_ANNOUNCEMENTS", "Hello there !")
 
 class SendConfirmationEmailHandler(webapp2.RequestHandler):
     def post(self):
