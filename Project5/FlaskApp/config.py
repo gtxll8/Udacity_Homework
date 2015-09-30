@@ -10,8 +10,8 @@ CONFIG = {
         'class_': oauth1.Twitter,
 
         # Twitter is an AuthorizationProvider so we need to set several other properties too:
-        'consumer_key': 'wM0LNsBC6W0VOwIEaZuMxsP5d',
-        'consumer_secret': 'aXtrzZHC3kbQKHsm0EX9DnvIOJeg8ZugU8o1IP2txDjnM6YG2K',
+        'consumer_key': '###########################',
+        'consumer_secret': '##########################################',
     },
 
     'github': { # Your internal provider name
@@ -40,8 +40,8 @@ CONFIG = {
 
     'google': {
         'class_': oauth2.Google,
-        'consumer_key': '720789354184-aokdhm5b8m2bjk6vtsb1aal83p1u0pgv.apps.googleusercontent.com',
-        'consumer_secret': 'dW3onhfvmsEIKXWq668OJdK1',
+        'consumer_key': '######################################################.apps.googleusercontent.com',
+        'consumer_secret': '######################################',
         'id': authomatic.provider_id(),
         'scope': oauth2.Google.user_info_scope + [
             'email',
