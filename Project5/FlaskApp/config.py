@@ -20,8 +20,8 @@ CONFIG = {
         'class_': oauth2.GitHub,
 
         # GitHub is an AuthorizationProvider too, so we need to set several other properties again:
-        'consumer_key': '36ee18c6a4ab61e50cc4',
-        'consumer_secret': '90b523efa0f80d4faef6f3ebab6d0efa9a0697a4',
+        'consumer_key': '##############################',
+        'consumer_secret': '###############################################',
         'access_headers': {'User-Agent': 'Awesome-Octocat-App'},
         'scope': ['id', 'email', 'name'],
     },
