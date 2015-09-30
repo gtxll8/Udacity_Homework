@@ -1,0 +1,37 @@
+{% block head %}
+      <title>Login Popup Example</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+         <link rel=stylesheet type=text/css href="{{ url_for('static', filename='signin.css') }}">
+         <link rel=stylesheet type=text/css href="{{ url_for('static', filename='bootstrap-social.css') }}">
+         <link rel=stylesheet type=text/css href="{{ url_for('static', filename='bootstrap.min.css') }}">
+         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+         <script type="text/javascript" src="{{ url_for('static', filename='jquery-1.9.1.min.js') }}"></script>
+  {% endblock %}
+   <body>
+
+<div class="container">
+
+
+    <div class="omb_login">
+        <h2 class="omb_authTitle">Login with :</h2>
+
+        <div class="row omb_row-sm-offset-3 omb_socialButtons">
+            <div class="col-xs-4 col-sm-2">
+                <a href="/login/github" class=" btn btn-block btn-social btn-github">
+                    <i class="fa fa-github"></i>
+                    <span >Github</span>
+                </a>
+            </div>
+            <div class="col-xs-4 col-sm-2">
+                <a href="/login/tw" class=" btn btn-block btn-social btn-twitter">
+                    <i class="fa fa-twitter"></i>
+                    <span>Twitter</span>
+                </a>
+            </div>
+            <div class="col-xs-4 col-sm-2">
+                <a href="/login/google" class="btn btn-block btn-social btn-google">
+                    <i class="fa fa-google-plus"></i>
+                    <span>Google+</span>
+                </a>
+            </div>
+        </div>

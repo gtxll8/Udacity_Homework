@@ -1,0 +1,21 @@
+{# deleteitem.html #}
+{% extends "base.html" %}
+{% block body %}
+
+<div class="panel-body">
+<h1> Are you sure you want to delete {{item.name}}? </h1>
+
+<form action="{{ url_for('deleteItem',user_id = item.user_id, item_id=item.id)}}" method = 'post'>
+    <!-- The extension adds a global function to the Jinja template engine called csrf_token.
+     This is a function that retrieves the current token and will be matched against the request token-->
+    <input type="hidden" name="_csrf_token" value="{{ csrf_token() }}">
+
+    <input type="submit" class="btn btn-primary" value="Delete">
+    <a href="{{url_for('sellerPage', user_id=user_id)}}" target="_self" class="btn btn-success">Cancel</a></p>
+
+
+
+
+</form>
+</div>
+{% endblock %}
