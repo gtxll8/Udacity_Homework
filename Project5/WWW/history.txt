@@ -1,0 +1,1000 @@
+  171  ifconfig
+  172  service
+  173  sudo /etc/init.d/apache2 restart
+  174  sudo apt-get install libapache2-mod-wsgi
+  175  sudo a2enmod mod-wsgi
+  176  which appache2
+  177  which a2enmod
+  178  pwd
+  179  su
+  180  sudo a2enmod mod-wsgi
+  181  sudo a2enmod
+  182  sudo nano /etc/apache2/mods-available/wsgi.load
+  183  LoadModule wsgi_module /usr/lib/apache2/modules/mod_wsgi.so
+  184  sudo a2enmod wsgi
+  185  sudo service apache2 restart
+  186  bash
+  187  sudo apt-get purge libapache2-mod-wsgi
+  188  sudo apt-get install libapache2-mod-wsgi
+  189  sudo a2enmod mod-wsgi
+  190  sudo /etc/init.d/apache2 restart
+  191  ls /etc/init.d/
+  192  more nginx
+  193  ls
+  194  cd /etc/init.d/
+  195  ls
+  196  more nginx 
+  197  ls
+  198  which nginx
+  199  rm -r nginx
+  200  sudo rm -r nginx
+  201  ls
+  202  cd ../init/
+  203  ls
+  204  cd ~
+  205  ls
+  206  history
+  207  sudo apt-get purge libapache2-mod-wsgi
+  208  sudo apt-get install apache2 apache2-base apache2-mpm-prefork apache2-utils libexpat1 ssl-cert
+  209  sudo apt-get update
+  210  sudo apt-get install apache2 apache2-base apache2-mpm-prefork apache2-utils libexpat1 ssl-cert
+  211  sudo apt-cache search apache2
+  212  sudo apt-get install libapache2-mod-wsgi python-pip gi
+  213  sudo service apache2 restart
+  214  sudo aptitude install apache2 apache2.2-common apache2-mpm-prefork apache2-utils libexpat1 ssl-cert
+  215  sudo aptitude install libapache2-mod-wsgi
+  216  sudo service apache2 restart
+  217  ls
+  218  cd ItemCatalog/
+  219  ls
+  220  sudo ufw status
+  221  sudo ufw enable
+  222  sudo a2enmod
+  223  ls
+  224  nano project.py
+  225  sudo ufw disable
+  226  python project.py
+  227  nano project.py
+  228  python project.py
+  229  cd ../
+  230  ls
+  231  cd Project-P3-Item-Catalog/FinalProject3-Item-Catalog/
+  232  ls
+  233  python project.py
+  234  ls
+  235  sudo ufw status
+  236  python project.py
+  237  cde ~
+  238  cd ~
+  239  ls
+  240  rm -r ItemCatalog/ Project-P3-Item-Catalog/
+  241  sudo rm -r ItemCatalog/ Project-P3-Item-Catalog/
+  242  sudo rm -r  Project-P3-Item-Catalog/
+  243  ls
+  244  apt-get -qqy install python-flask python-sqlalchemy
+  245  sudo apt-get -qqy install python-flask python-sqlalchemy
+  246  sudo apt-get purge python-flask python-sqlalchemy
+  247  sudo apt-get -qqy install python-flask python-sqlalchemy
+  248  pip install authomatic
+  249  pip install Flask-Login
+  250  pip install Flask-WTF
+  251  pip install flask-seasurf
+  252  python --version
+  253  git clone https://github.com/gtxll8/Project-P3-Item-Catalog
+  254  cd Project-P3-Item-Catalog/FinalProject3-Item-Catalog/
+  255  ls
+  256  python project.py 
+  257  ls
+  258  nano myapp.py
+  259  python myapp.py 
+  260  sudo python myapp.py 
+  261  ls
+  262  cd Project-P3-Item-Catalog/
+  263  cd FinalProject3-Item-Catalog/
+  264  ls
+  265  python project.py 
+  266  cd Project-P3-Item-Catalog/FinalProject3-Item-Catalog/
+  267  ython myapp.py 
+  268  python myapp.py 
+  269  cd Project-P3-Item-Catalog/FinalProject3-Item-Catalog/
+  270  ls
+  271  python myapp.py 
+  272  sudo ufw status
+  273  cd Project-P3-Item-Catalog/FinalProject3-Item-Catalog/
+  274  python myapp.py 
+  275  sudo ufw status
+  276  sudo ufw enable
+  277  sudo ufw status
+  278  python myapp.py 
+  279  cd Project-P3-Item-Catalog/FinalProject3-Item-Catalog/
+  280  python project.py 
+  281  cd Project-P3-Item-Catalog/FinalProject3-Item-Catalog/
+  282  nano myapp.py 
+  283  nano project.py 
+  284  netstat -tan
+  285  curl
+  286  curl -I localhost:8080
+  287  curl -I http://ec2-52-89-6-106.us-west-2.compute.amazonaws.com:8080
+  288  cd /var/www/
+  289  ls
+  290  mkdir FlaskApp
+  291  sudo mkdir FlaskApp
+  292  ls
+  293  ls -lrta
+  294  cd FlaskApp/
+  295  sudo mkdir FlaskApp
+  296  ls
+  297  sudo cp -r ~/Project-P3-Item-Catalog/FinalProject3-Item-Catalog/ .
+  298  ls
+  299  sudo cp -r ~/Project-P3-Item-Catalog/FinalProject3-Item-Catalog/*.* FlaskApp/
+  300  ls
+  301  ls FlaskApp/
+  302  sudo rm -r FinalProject3-Item-Catalog/
+  303  cd FlaskApp/
+  304  sudo nano /etc/apache2/sites-available/FlaskApp
+  305  sudo a2ensite FlaskApp
+  306  ls
+  307  sudo mv /etc/apache2/sites-available/FlaskApp /etc/apache2/sites-available/FlaskApp.conf
+  308  sudo a2ensite FlaskApp
+  309  service apache2 reload
+  310  pwd
+  311  sudo nano flaskapp.wsgi
+  312  sudo service apache2 restart 
+  313  ls
+  314  cd FlaskApp/
+  315  ls
+  316  ls -lrta
+  317  cp project.py __init__.py
+  318  sudo cp project.py __init__.py
+  319  sudo service apache2 restart 
+  320  sudo nano /etc/apache2/sites-available/FlaskApp.conf
+  321  sudo service apache2 restart 
+  322  sudo nano /etc/apache2/sites-available/FlaskApp.conf
+  323  sudo service apache2 restart 
+  324  sudo a2ensite FlaskApp
+  325  cd ../
+  326  ls
+  327  sudo nano flaskapp.wsgi 
+  328  sudo service apache2 restart 
+  329  sudo nano /usr/local/apache2/conf/httpd.conf
+  330  sudo nano /etc/apache2/httpd.conf
+  331  sudo service apache2 restart 
+  332  sudo /etc/init.d/apache2 restart
+  333  cd FlaskApp/
+  334  ls
+  335  nano __init__.py 
+  336  sudo nano __init__.py 
+  337  sudo /etc/init.d/apache2 restart
+  338  sudo nano /etc/hosts
+  339  sudo nano /etc/apache2/httpd.conf
+  340  sudo /etc/init.d/apache2 restart
+  341  sudo nano __init__.py 
+  342  sudo rm __init__.py 
+  343  sudo nano  __init__.py 
+  344  sudo /etc/init.d/apache2 restart
+  345  ls
+  346  sudo python __init__.py 
+  347  sudo nano __init__.py 
+  348  sudo python __init__.py 
+  349  sudo /etc/init.d/apache2 restart
+  350  cd ../
+  351  ls
+  352  in name, using 127.0.0.1. Set the 'ServerName' directive globally to suppress this message
+  353  sudo nano flaskapp.wsgi 
+  354  sudo nano /etc/apache2/httpd.conf
+  355  history
+  356  sudo nano /etc/apache2/sites-available/FlaskApp.conf
+  357  ls
+  358  cd FlaskApp/
+  359  ls -lrt
+  360  ls
+  361  sl -lrta
+  362  ls -lrta
+  363  sudo service apache2 restart
+  364  sudo nano /etc/apache2/sites-available/FlaskApp
+  365  sudo a2ensite FlaskApp
+  366  sudo tail -20 /var/log/apache2/error.log
+  367  sudo tail -f /var/log/apache2/error.log
+  368  sudo service apache2 restart
+  369  source venv/bin/activate
+  370  sudo pip install virtualenv 
+  371  sudo virtualenv venv
+  372  Installing setuptools, pip, wheel...done.
+  373  source venv/bin/activate 
+  374  sudo pip install Flask 
+  375  sudo python __init__.py 
+  376  deactivate
+  377  sudo service apache2 restart 
+  378  ls
+  379  more __init__.py 
+  380  cd ../
+  381  ls
+  382  cd FlaskApp/
+  383  ls
+  384  ls -lrt
+  385  sudo cp ~/Project-P3-Item-Catalog/FinalProject3-Item-Catalog/static/ .
+  386  sudo cp -r ~/Project-P3-Item-Catalog/FinalProject3-Item-Catalog/static/ .
+  387  ls
+  388  ls -lrt
+  389  sudo cp -r ~/Project-P3-Item-Catalog/FinalProject3-Item-Catalog/template/ .
+  390  sudo cp -r ~/Project-P3-Item-Catalog/FinalProject3-Item-Catalog/templates/ .
+  391  sudo service apache2 restart 
+  392  ls -lrt
+  393  ls static/
+  394  ls -lrt  static/
+  395  ls
+  396  ls -lrta
+  397  sudo service apache2 restart 
+  398  source venv/bin/activate
+  399  sudo service apache2 restart
+  400  deactivate
+  401  sudo nano /etc/apache2/sites-available/FlaskApp.conf
+  402  sudo a2ensite FlaskApp
+  403  udo service apache2 restart
+  404  sudo service apache2 restart
+  405  history
+  406  cd /var/www/FlaskApp/
+  407  ls
+  408  cd FlaskApp/
+  409  ls -lrta
+  410  sudo mv __init__.py save_init.py
+  411  sudo mv project.py __init__.py
+  412  udo service apache2 restart
+  413  sudo service apache2 restart
+  414  sudo nano __init__.py 
+  415  sudo service apache2 restart
+  416  sudo python __init__.py 
+  417  sudo mv __init__.py project.py
+  418  sudo mv save_init.py __init__.py
+  419  sudo service apache2 restart
+  420  sudo tail -100 /var/log/apache2/access.log
+  421  sudo tail -f /var/log/apache2/access.log
+  422  sudo tail -f /var/log/apache2/error.log
+  423  curl -I localhost:5000
+  424  sudo tail -f /var/log/apache2/error.log
+  425  source venv/bin/activate
+  426  cd /var/www/
+  427  ls
+  428  cd FlaskApp/FlaskApp/
+  429  ls
+  430  cd venv/
+  431  ls
+  432  cd ../
+  433  source venv/bin/activate
+  434  pip install authomatic
+  435  sudo pip install authomatic
+  436  pip upgrade authomatic
+  437  pip --upgrade authomatic
+  438  sudo pip install Flask-Login
+  439  sudo pip install Flask-WTF
+  440  sudo pip install flask-seasurf
+  441  pip install --upgrade authomatic
+  442  sudo pip install --upgrade authomatic
+  443  sudo pip install sqlalchemy
+  444  sudo service apache2 restart
+  445  deactivate
+  446  ls
+  447  ls -lrta
+  448  sudo mv __init__.py saved_init.py
+  449  ls -lrta
+  450  sudo mv project.py __init__.py
+  451  sudo service apache2 restart
+  452  ls
+  453  sudo python database_setup.py
+  454  sudo service apache2 restart
+  455  source venv/bin/activate
+  456  sudo service apache2 restart
+  457  ls
+  458  ls -lrta
+  459  deactivate
+  460  ls
+  461  sudo nano __init__.py 
+  462  sudo nano config.py
+  463  sudo nano database_setup.py
+  464  source venv/bin/activate
+  465  history | grep sqlal
+  466  sudo pip remove sqlalchemy
+  467  sudo pip install --remove sqlalchemy
+  468  apt-get -qqy install python-flask python-sqlalchemy
+  469  sudo apt-get -qqy install python-flask python-sqlalchemy
+  470  sudo apt-get install  python-sqlalchemy
+  471  sudo service apache2 restart
+  472  ls
+  473  ls -lrta
+  474  python __init__.py 
+  475  sudo nano __init__.py 
+  476  python __init__.py 
+  477  deactivate
+  478  python __init__.py 
+  479  sudo python __init__.py 
+  480  sudo service apache2 restart
+  481  ls -lrta
+  482  sudo python __init__.py 
+  483  ls
+  484  ls ../
+  485  python /var/www/FlaskApp/flaskapp.wsgi
+  486  cd ../
+  487  sudo nano flaskapp.wsgi 
+  488  sudo apt-get install libapache2-mod-wsgi python-dev
+  489  sudo nano flaskapp.wsgi 
+  490  sudo service apache2 restart
+  491  python /var/www/FlaskApp/flaskapp.wsgi
+  492  sudo python /var/www/FlaskApp/flaskapp.wsgi
+  493  python /var/www/FlaskApp/flaskapp.wsgi
+  494  sudo nano flaskapp.wsgi 
+  495  sudo service apache2 restart
+  496  ls
+  497  cd FlaskApp/
+  498  ls
+  499  ls -lrta
+  500  cd ../
+  501  ls -lrta
+  502  cd FlaskApp/
+  503  sudo chown www-data. .
+  504  ls -lrta
+  505  sudo python /var/www/FlaskApp/flaskapp.wsgi
+  506  sudo service apache2 restart
+  507  cd ../
+  508  sudo chown www-data. .
+  509  ls -lrta
+  510  sudo service apache2 restart
+  511  cd FlaskApp/
+  512  source venv/bin/activate
+  513  sudo service apache2 restart
+  514  sudo chown apache. .
+  515  sudo chown appache. .
+  516  sudo chown apache. .
+  517  sudo chown root. .
+  518  ls -lrta
+  519  cd ../
+  520  l s-lrta
+  521  ls -lrta
+  522  sudo chown root. .
+  523  ls -lrta
+  524  sudo chmod u+w+x,g+w+x FlaskApp/
+  525  sudo chmod u+w+x,g+w+x FlaskApp/salesite.db 
+  526  ls -lrta
+  527  cd FlaskApp/
+  528  ls -lrta
+  529  sudo service apache2 restart
+  530  pwd
+  531  sudo iptables -A INPUT -p tcp --dport 5000 -j ACCEPT
+  532  sudo service apache2 restart
+  533  sudo python /var/www/FlaskApp/flaskapp.wsgi
+  534  cd /var/www/FlaskApp/FlaskApp/
+  535  sudo python __init__.py
+  536  ls -lrta
+  537  cd ../
+  538  ls -lrta
+  539  chown www-data. .
+  540  sudo chown www-data. .
+  541  ls -lrta
+  542  sudo chown root. .
+  543  ls -lrta
+  544  sudo chown :www-data FlaskApp/
+  545  ls -lrta
+  546  cd FlaskApp/
+  547  ls -lrta
+  548  cd FlaskApp/
+  549  ls -lrta
+  550  sudo service apache2 restart
+  551  sudo python /var/www/FlaskApp/flaskapp.wsgi
+  552  ls -lrta
+  553  sudo nano config.py
+  554  sudo nano database_setup.py
+  555  sudo nano __init__.py
+  556  sudo service apache2 restart
+  557  sudo nano __init__.py
+  558  sudo service apache2 restart
+  559  cd ../
+  560  ls
+  561  cd ../
+  562  ls -lrta
+  563  sudo chown www-data:www-data FlaskApp/FlaskApp/salesite.db 
+  564  sudo chown www-data:www-data FlaskApp/FlaskApp
+  565  sudo chown www-data:www-data FlaskApp
+  566  ls -lrta
+  567  sudo service apache2 restart
+  568  ls
+  569  cd /var/www/
+  570  ls
+  571  ls -lrt FlaskApp/FlaskApp/
+  572  cd FlaskApp/
+  573  ls -lrta
+  574  chmod 664 FlaskApp/salesite.db 
+  575  sudo chmod 664 FlaskApp/salesite.db 
+  576  ls -lrta
+  577  sudo chown :www-data FlaskApp/salesite.db 
+  578  ls -lrta
+  579  sudo chown :www-data FlaskApp
+  580  ls -lrta
+  581  sudo service apache2 restart
+  582  cd FlaskApp/
+  583  ls -lrta
+  584  sudo python __init__.py
+  585  history
+  586  python /var/www/FlaskApp/flaskapp.wsgi
+  587  sudo python /var/www/FlaskApp/flaskapp.wsgi
+  588  history | grep tail
+  589  sudo tail -f /var/log/apache2/error.log
+  590  ls
+  591  ls -lrta
+  592  rm -r salesite.db 
+  593  ls
+  594  cd Project-P3-Item-Catalog/
+  595  ls
+  596  cd ~
+  597  history
+  598  sudo python /var/www/FlaskApp/flaskapp.wsgi
+  599  ls
+  600  rm -r salesite.db 
+  601  cd /var/www/
+  602  ls
+  603  cd FlaskApp/
+  604  ls
+  605  ls -lrta
+  606  sudo rm salesite.db 
+  607  ls
+  608  cd FlaskApp/
+  609  ls -lrta
+  610  sudo chown root:www-data /salesite.db 
+  611  sudo chown root:www-data ./salesite.db 
+  612  ls -lrta
+  613  sudo nano __init__.py
+  614  sudo service apache2 restart
+  615  sudo nano __init__.py
+  616  ls -lrta
+  617  sudo rm salesite.db 
+  618  ls -lrta
+  619  sudo service apache2 restart
+  620  ls -lrta
+  621  sudo python __init__.py
+  622  ls -lrta
+  623  cd ../
+  624  ls
+  625  ls -lrta
+  626  sudo chmod 664 ./FlaskApp/salesite.db 
+  627  ls -lrtA
+  628  sudo chown :www-data ./FlaskApp/salesite.db 
+  629  ls -lrtA
+  630  sudo service apache2 restart
+  631  ls -lrtA
+  632  cd ./FlaskApp/
+  633  ls -lrta
+  634  cd ../
+  635  l s-lrta
+  636  ls -lrta
+  637  sudo chown root:www-data ./FlaskApp
+  638  ls -lrta
+  639  cd ../
+  640  ls -lrta
+  641  sudo chown root:www-data ./FlaskApp
+  642  ls -lrta
+  643  sudo service apache2 restart
+  644  cd ./FlaskApp/FlaskApp/
+  645  ls -lrta
+  646  history | grep tail
+  647  sudo tail -f /var/log/apache2/error.log
+  648  history
+  649  sudo tail -f /var/log/apache2/error.log
+  650  history
+  651  ls =lrta
+  652  ls -lrta
+  653  chistory
+  654  history
+  655  cd 
+  656  history | grep sites
+  657  cd /etc/apache2/sites-available/F
+  658  cd /etc/apache2/sites-available/
+  659  ls
+  660  nano 000-default.conf 
+  661  history
+  662  sudo python /var/www/FlaskApp/flaskapp.wsgi
+  663  sudonano /var/www/FlaskApp/flaskapp.wsgi
+  664  sudo nano /var/www/FlaskApp/flaskapp.wsgi
+  665  cd /var/www/FlaskApp/FlaskApp/
+  666  ls
+  667  sudo mv __init__.py project.py
+  668  sudo em __init__.pyc 
+  669  sudo rm __init__.pyc 
+  670  ls
+  671  sudo nano /var/www/FlaskApp/flaskapp.wsgi
+  672  sudo service apache2 restart
+  673  sudo nano /var/www/FlaskApp/flaskapp.wsgi
+  674  sudo service apache2 restart
+  675  sudo nano /var/www/FlaskApp/flaskapp.wsgi
+  676  sudo service apache2 restart
+  677  ls
+  678  ls -lrta
+  679  cd ../
+  680  ls -lrta
+  681  cd ../
+  682  ls -lrta
+  683  cd Flas
+  684  cd FlaskApp/
+  685  ls -lrta
+  686  cd ../
+  687  history
+  688  history | grep chmod
+  689  sudo chmod 664 FlaskApp/
+  690  cd ../
+  691  historycd www/
+  692  ls -lrta
+  693  cd www/
+  694  historycd www/
+  695  ls -lrta
+  696  sudo service apache2 restart
+  697  cd FlaskApp/
+  698  l s-lrta
+  699  ls -lrta
+  700  cd FlaskApp/
+  701  history
+  702  history | grep chmod
+  703  sudo chmod u+w+x,g+w+x FlaskApp/
+  704  ls -lrta
+  705  sudo service apache2 restart
+  706  sudo chmod u+w+x,g+w+x FlaskApp/
+  707  sudo chmod u+w+x,g+w+x FlaskApp/FlaskApp 
+  708  cd FlaskApp/
+  709  ls
+  710  cd FlaskApp/
+  711  ls
+  712  sudo chmod u+w+x,g+w+x FlaskApp/FlaskApp 
+  713  cd FlaskApp
+  714  ls -lrta
+  715  sudo cd FlaskApp/Fla
+  716  sudo cd FlaskApp/
+  717  sudo cd FlaskApp/cd ../
+  718  ls -lrta
+  719  cd FlaskApp/
+  720  su
+  721  sudo su
+  722  sudo service apache2 restart
+  723  sudo tail -f /var/log/apache2/error.log
+  724  sudo python /var/www/FlaskApp/flaskapp.wsgi
+  725  ls -lrta
+  726  history | grep 000
+  727  history | grep 000-
+  728  history | grep sites
+  729  sudo nano /etc/apache2/sites-available/FlaskApp.conf
+  730  cd Fl
+  731  sudo su
+  732  sudo su
+  733  sudo service apache2 restart
+  734  sudo su
+  735  sudo su
+  736  ls
+  737  sudo nano /etc/apache2/sites-available/FlaskApp.conf
+  738  curl -I localhost:8000
+  739  curl -I localhost:8080
+  740  curl -I localhost
+  741  history | grep ufw
+  742  sudo ufw allow 8080/tcp
+  743  sudo tail -f /var/log/apache2/error.log
+  744  sudo su
+  745  sudo su
+  746  history | grep tail
+  747  sudo tail -f /var/log/apache2/error.log
+  748  pwd
+  749  history
+  750  sudo tail -f /var/log/apache2/error.log
+  751  sudo nano /etc/apache2/sites-available/FlaskApp.conf
+  752  sudo service apache2 restart
+  753  sudo nano /etc/apache2/sites-available/FlaskApp.conf
+  754  sudo service apache2 restart
+  755  sudo nano /etc/apache2/sites-available/FlaskApp.conf
+  756  sudo service apache2 restart
+  757  sudo nano /etc/apache2/sites-available/FlaskApp.conf
+  758  sudo service apache2 restart
+  759  sudo nano /etc/apache2/sites-available/FlaskApp.conf
+  760  sudo service apache2 restart
+  761  sudo nano /etc/apache2/sites-available/FlaskApp.conf
+  762  sudo service apache2 restart
+  763  sudo nano /etc/apache2/sites-available/FlaskApp.conf
+  764  sudo service apache2 restart
+  765  sudo nano /etc/apache2/sites-available/FlaskApp.conf
+  766  sudo service apache2 restart
+  767  sudo nano /etc/apache2/sites-available/FlaskApp.conf
+  768  sudo service apache2 restart
+  769  netstat -tulpn
+  770  sudo nano /etc/apache2/sites-available/FlaskApp.conf
+  771  netstat -tulpn
+  772  sudo service apache2 restart
+  773  netstat -tulpn
+  774  sudo nano /etc/apache2/sites-available/FlaskApp.conf
+  775  sudo service apache2 restart
+  776  sudo nano /etc/apache2/sites-available/FlaskApp.conf
+  777  sudo service apache2 restart
+  778  sudo nano /etc/apache2/sites-available/FlaskApp.conf
+  779  pwd
+  780  ls
+  781  mkdir Project5-Server-Configuration
+  782  ls
+  783  sudo copy -a /var/www/FlaskApp/FlaskApp ./Project5-Server-Configuration/
+  784  ls Project5-Server-Configuration/
+  785  sudo copy -a /var/www/FlaskApp/FlaskApp/ ./Project5-Server-Configuration/
+  786  ls Project5-Server-Configuration/
+  787  sudo su
+  788  sudo cp -a /var/www/FlaskApp/FlaskApp/ ./Project5-Server-Configuration/
+  789  ls Project5-Server-Configuration/
+  790  ls Project5-Server-Configuration/FlaskApp/
+  791  cd Project5-Server-Configuration/
+  792  cd FlaskApp/
+  793  ls -lrta
+  794  cd ../
+  795  pwd
+  796  ls
+  797  mv Project5-Server-Configuration/ Project5-Linux-Server-Configuration/
+  798  ls
+  799  sudo nano /etc/apache2/sites-available/FlaskApp.conf
+  800  ls
+  801  sudo apt-get install postgresql
+  802  sudo pip install psycopg2
+  803  sudo apt-get install libpq-dev
+  804  bundle install
+  805  sudo pip install psycopg2
+  806  cd /var/
+  807  cd www/
+  808  ls
+  809  sl -lrta
+  810  ls -lrta
+  811  cd FlaskApp/
+  812  sudo cd FlaskApp/
+  813  ps aux | grep -i apache
+  814  cd /
+  815  ls
+  816  sudo chown -R www-data:www-data /var/www
+  817  chmod go-rwx /var/www
+  818  sudo chmod go-rwx /var/www
+  819  sudo chmod go+x /var/www
+  820  sudo chgrp -R www-data /var/www
+  821  sudo chmod -R go-rwx /var/www
+  822  sudo chmod -R g+rx /var/www
+  823  sudo chmod -R g+rwx /var/www
+  824  ls -lrta
+  825  cd var/
+  826  ls
+  827  ls -lrta
+  828  cd www
+  829  awk -F: '/^groupname/ {print $4;}' /etc/group
+  830  cat /etc/group | grep [www-data]
+  831  cat /etc/group | grep www-data
+  832  passwd cat /etc/passwd
+  833  passwd cat /etc/pass
+  834  passwd cat /etc/passwd
+  835  more /etc/gropup
+  836  more /etc/group
+  837  ls /etc/
+  838  more /etc/passwd
+  839  sudo service apache2 restart
+  840  sudo useradd -g www-data gtxll8
+  841  id gtxll8
+  842  sudo usermod -a -G www-data  gtxll8
+  843  cd /var/www
+  844  ls -lrta
+  845  id gtxll8
+  846  cd /var/www/FlaskApp/FlaskApp/
+  847  ls
+  848  ls -lrtsa
+  849  sudo su
+  850  sudo -u postgres createuser -s catalog
+  851  sudo su - catalog
+  852  sudo -u postgres createuser -s catalog
+  853  which psql
+  854  sudo su - postgres
+  855  sudo -u postgres createuser -s catalogsudo -u postgres createuser -s catalog
+  856  sudo su postgres -c createuser catalog
+  857  sudo su postgres -c dropuser catalog
+  858  sudo su postgres -c dropuser posgres
+  859  sudo su postgres -c dropuser postgres
+  860  sudo su - postgres
+  861  sudo su postgres -c createuser catalog
+  862  sudo su postgres createuser -s catalog
+  863  sudo -u postgres createuser -s catalog
+  864  sudo su - postgres
+  865  sudo su postgres -c createdb psqlsite
+  866  createdb -U $USER --locale=en_US.utf-8 -E utf-8 -O catalog psqlsite -T template0
+  867  sudo su - postgres
+  868  cd /var/www/FlaskApp/FlaskApp/
+  869  ls
+  870  nano project.py
+  871  sudo service apache2 restart
+  872  nano project.py
+  873  sudo service apache2 restart
+  874  nano project.py
+  875  sudo service apache2 restart
+  876  nano project.py
+  877  sudo service apache2 restart
+  878  nano project.py
+  879  psql
+  880  sudo su - postgres
+  881  cd 
+  882  cd ~
+  883  pwd
+  884  sudo su - postgres
+  885  cd /var/www/FlaskApp/FlaskApp/
+  886  ls -lrt
+  887  cp database_setup.py psql_database_setup.py
+  888  ls -lrt
+  889  nano psql_database_setup.py 
+  890  python psql_database_setup.py 
+  891  nano psql_database_setup.py 
+  892  python psql_database_setup.py 
+  893  nano psql_database_setup.py 
+  894  python psql_database_setup.py 
+  895  nano psql_database_setup.py 
+  896  python psql_database_setup.py 
+  897  nano psql_database_setup.py 
+  898  python psql_database_setup.py 
+  899  nano psql_database_setup.py 
+  900  python psql_database_setup.py 
+  901  nano psql_database_setup.py 
+  902  python psql_database_setup.py 
+  903  nano psql_database_setup.py 
+  904  python psql_database_setup.py 
+  905  nano psql_database_setup.py 
+  906  sudo -u postgres createdb psqlsite -O catalog
+  907  sudo su - posgres
+  908  sudo -u postgres createdb psqlsite -O catalog
+  909  python psql_database_setup.py 
+  910  nano psql_database_setup.py 
+  911  nano project.py
+  912  sudo service apache2 restart
+  913  nano project.py
+  914  sudo service apache2 restart
+  915  nano project.py
+  916  sudo service apache2 restart
+  917  nano project.py
+  918  sudo service apache2 restart
+  919  history
+  920  sudo tail -f /var/log/apache2/error.log
+  921  cd /var/www/FlaskApp/FlaskApp/
+  922  ls -lrta
+  923  python project.py
+  924  sudo service apache2 restart
+  925  nano project.py
+  926  sudo service apache2 restart
+  927  nano psql_database_setup.py 
+  928  nano project.py
+  929  cd /var/www/FlaskApp/FlaskApp/
+  930  ls -lrt
+  931  python project.py
+  932  nano project.py
+  933  sudo tail -f /var/log/apache2/error.log
+  934  ls -lrt
+  935  sudo nano /etc/postgresql/9.1/main/pg_hba.conf
+  936  sudo nano /etc/postgresql/9.3/main/pg_hba.conf 
+  937  cd ~
+  938  git status
+  939  cd Project-P3-Item-Catalog/
+  940  git status
+  941  ls -al
+  942  sudo nano /etc/apache2/sites-available/FlaskApp.conf
+  943  sudo service apache2 restart
+  944  sudo nano /etc/postgresql/9.3/main/postgresql.conf 
+  945  sudo tail -f /var/log/apache2/error.log
+  946  sudo tail -f /var/log/apache2/error.log
+  947  la
+  948  ls -lrta
+  949  more .bash_history
+  950  sudo su - postgres
+  951  cd /var/www/FlaskApp/FlaskApp/
+  952  ls
+  953  nano database_setup.py
+  954  nano psql_database_setup.py 
+  955  cd templates/
+  956  ls
+  957  nano edititem.html index.html 
+  958  sudo service apache2 restart
+  959  nano edititem.html index.html 
+  960  sudo service apache2 restart
+  961  nano edititem.html index.html 
+  962  sudo service apache2 restart
+  963  sudo ufw status
+  964  history | grep ufw
+  965  sudo ufw delete allow 8080/tcp
+  966  history | grep ufw
+  967  sudo ufw status
+  968  sudo ufw allow ntp
+  969  sudo ufw status
+  970  dat
+  971  date
+  972  sudo tail -f /var/log/apache2/error.log
+  973  sudo service apache2 restart
+  974  sudo nano /etc/apache2/httpd.conf
+  975  sudo /etc/hostname
+  976  sudo nano /etc/hostname
+  977  sudo
+  978  sudo service apache2 restart
+  979  sudo nano /etc/hosts
+  980  sudo nano /etc/hostname
+  981  hostname -f
+  982  cat /etc/hostname
+  983  sudo ps -ef
+  984  sudo nano /etc/hosts
+  985  sudo ps -ef
+  986  sudo service apache2 restart
+  987  cd /etc/apache2/
+  988  ls
+  989  sudo nano httpd.conf 
+  990  sudo nano apache2.conf 
+  991  echo "ServerName localhost" | sudo tee /etc/apache2/conf-available/fqdn.conf
+  992  sudo a2enconf fqdn
+  993  sudo service apache2 restart
+  994  sudo apt-get install cron-apt
+  995  sudo ln -s /usr/sbin/cron-apt /etc/cron.weekly/
+  996  sudo nano /etc/cron.d/cron-apt 
+  997  sudo nano  /etc/cron.weekly/
+  998  sudo nano  /etc/cron.weekly
+  999  sudo nano  /etc/cron.daily/
+ 1000  sudo nano /usr/sbin/cron-apt
+ 1001  sudo nano /etc/cron.d/cron-ap
+ 1002  sudo nano /etc/cron.d
+ 1003  sudo nano /etc/cron.daily/
+ 1004  sudo nano /usr/sbin/cron-apt 
+ 1005  ls
+ 1006  cd /etc/cron.d/
+ 1007  ls
+ 1008  sudo nano cron-apt 
+ 1009  /usr/sbin/cron-apt && /usr/sbin/cron-apt
+ 1010  sudo /usr/sbin/cron-apt && /usr/sbin/cron-apt
+ 1011  sudo su
+ 1012  cd ~
+ 1013  sudo ufw status
+ 1014  sudo service apache2 restart
+ 1015  ls
+ 1016  more dead.letter 
+ 1017  ls
+ 1018  rm dead.letter 
+ 1019  mail -v george@chessborg.com
+ 1020  sudo nano /etc/ssmtp/ssmtp.conf
+ 1021  mail -v george@chessborg.com
+ 1022  sudo nano /etc/apt/apt.conf.d/50unattended-upgrades
+ 1023  sudo unattended-upgrade -v -d
+ 1024  history | grep apt-get
+ 1025  sudo apt-get upgrade
+ 1026  sudo shutdown -r now
+ 1027  sudo apt-get install libxml2 libxml2-dev libxml2-utils
+ 1028  sudo apt-get install libaprutil1 libaprutil1-dev
+ 1029  uname -a
+ 1030  ln -s /usr/lib/x86_64-linux-gnu/libxml2.so.2 /usr/lib/libxml2.so.2
+ 1031  sudo ln -s /usr/lib/x86_64-linux-gnu/libxml2.so.2 /usr/lib/libxml2.so.2
+ 1032  sudo apt-get install libapache-mod-security
+ 1033  sudp apt-get update
+ 1034  sudo apt-get update
+ 1035  sudo apt-get install libapache-mod-security
+ 1036  sudo apt-get install libapache2-modsecurity
+ 1037  apachectl -M | grep --color security
+ 1038  mv /etc/modsecurity/modsecurity.conf{-recommended,}
+ 1039  sudo mv /etc/modsecurity/modsecurity.conf{-recommended,}
+ 1040  sudo service apache2 restart
+ 1041  ls -l /var/log/apache2/modsec_audit.log
+ 1042  sudo ls -l /var/log/apache2/modsec_audit.log
+ 1043  sudo nano /etc/modsecurity/modsecurity.conf
+ 1044  sudo ls -l /usr/share/modsecurity-crs/
+ 1045  sudo nano /etc/apache2/mods-enabled/modsecurity.conf
+ 1046  cd /etc/apache2/
+ 1047  ls
+ 1048  cd mods-enabled/
+ 1049  ls
+ 1050  cd ~
+ 1051  sudo nano /etc/apache2/mods-enabled/modsecurity.conf
+ 1052  cd /usr/share/modsecurity-crs/activated_rules/
+ 1053  ln -s /usr/share/modsecurity-crs/base_rules/modsecurity_crs_41_sql_injection_attacks.conf .
+ 1054  sudo ln -s /usr/share/modsecurity-crs/base_rules/modsecurity_crs_41_sql_injection_attacks.conf .
+ 1055  sudo service apache2 restart
+ 1056  sudo nano /etc/apache2/mods-enabled/modsecurity.conf
+ 1057  sudo service apache2 restart
+ 1058  sudo nano /etc/apache2/mods-enabled/modsecurity.conf
+ 1059  history
+ 1060  sudo apt-get install denyhosts
+ 1061  sudo nano /etc/hosts.allow
+ 1062  sudo apt-get remove denyhosts
+ 1063  sudo nano /etc/hosts.allow
+ 1064  which denyhosts
+ 1065  sudo apt-get install libapache2-mod-evasive
+ 1066  sudo mkdir /var/log/mod_evasive
+ 1067  sudo chown www-data:www-data /var/log/mod_evasive/
+ 1068  sudo nano /etc/apache2/mods-available/mod-evasive.conf
+ 1069  sudo a2enmod mod-evasive
+ 1070  sudo service apache2 restart
+ 1071  sudo a2enmod mod-evasive
+ 1072  cd /etc/apache2/mods-available/
+ 1073  ls
+ 1074  sudo a2enmod mod-evasive
+ 1075  sudo mv /etc/apache2/mods-available/mod-evasive.conf mod_evasive.conf
+ 1076  sudo a2enmod mod-evasive
+ 1077  sudo a2enmod mod_evasive
+ 1078  sudo a2enmod mod_evasive.conf
+ 1079  udo ls -al /etc/httpd/conf.d/mod_evasive.conf
+ 1080  sudo ls -al /etc/httpd/conf.d/mod_evasive.conf
+ 1081  sudo ls -al /etc/httpd/conf.d/
+ 1082  ls -lrta
+ 1083  sudo nano mod_evasive.conf 
+ 1084  sudo a2enmod mod_evasive.conf
+ 1085  sudo ls -l /etc/httpd/conf.d
+ 1086  sudo a2enmod evasive
+ 1087  sudo nano /var/log/mod_evasive/
+ 1088  sudo ls /var/log/mod_evasive/
+ 1089  df -kh
+ 1090  sudo service apache2 restart
+ 1091  cd /var/www/FlaskApp/FlaskApp/
+ 1092  cd templates/
+ 1093  ls
+ 1094  sudo nano index.html 
+ 1095  sudo nano edititem.html 
+ 1096  sudo nano newitem.html 
+ 1097  sudo service apache2 restart
+ 1098  sudo aptitude install -y logwatch
+ 1099  sudo nano nano /usr/share/logwatch/default.conf/logwatch.conf
+ 1100  logwatch --detail Low --mailto george@chessborg.com --service http --range today
+ 1101  logwatch
+ 1102  sudo logwatch
+ 1103  sudo logwatch --detail Low --mailto george@chessborg.com --service http --range today
+ 1104  root@ip-10-20-26-195
+ 1105  4:13 PM (1 minute ago)
+ 1106  to me 
+ 1107  4:13 PM (1 minute ago)
+ 1108  to me 
+ 1109  4:13 PM (1 minute ago)
+ 1110  to me 
+ 1111  ls
+ 1112  more dead.letter 
+ 1113  sudo nano nano /usr/share/logwatch/default.conf/logwatch.conf
+ 1114  sudo apt-get install fail2ban
+ 1115  sudo cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
+ 1116  sudo nano /etc/fail2ban/jail.local
+ 1117  sudo service fail2ban start
+ 1118  sudo service fail2ban stop
+ 1119  sudo service fail2ban start
+ 1120  sudo nano /etc/fail2ban/jail.local
+ 1121  sudo fail2ban-client status
+ 1122  sudo iptables -S
+ 1123  history
+ 1124  sudo logwatch
+ 1125  logwatch status
+ 1126  sudo logwatch status
+ 1127  history | grep fail2ban
+ 1128  sudo fail2ban-client status
+ 1129  sudo iptables -S
+ 1130  sudo nano /etc/fail2ban/jail.local
+ 1131  history | grep fail2ban
+ 1132  sudo service fail2ban stop
+ 1133  sudo service fail2ban start
+ 1134  sudo fail2ban-client status
+ 1135  sudo nano /etc/fail2ban/jail.local
+ 1136  cd /var/www/
+ 1137  ls -lrta
+ 1138  sudo iptables -S
+ 1139  sudo su
+ 1140  history | grep utf
+ 1141  history | grep ufw
+ 1142  sudo ufw status
+ 1143  cd ~
+ 1144  ls
+ 1145  ls -lrta
+ 1146  history | grep .124
+ 1147  history | grep scp
+ 1148  cd .ssh/
+ 1149  ls
+ 1150  cd aut
+ 1151  sudo nano authorized_keys 
+ 1152  su grader
+ 1153  sudo nano /etc/apache2/sites-available/FlaskApp.conf
+ 1154  cd /var/www/FlaskApp/
+ 1155  ls -lrt
+ 1156  sudo nano flaskapp.wsgi 
+ 1157  sudo nano /etc/postgresql/9.1/main/pg_hba.conf
+ 1158  sudo nano /etc/postgresql/9.3/main/pg_hba.conf
+ 1159  sudo apt-get update
+ 1160  sudo apt-get upgrade
+ 1161  su grader
+ 1162  logwatch
+ 1163  sudo logwatch
+ 1164  sudo su
+ 1165  su
+ 1166  su root
+ 1167  id gtxll8
+ 1168  su
+ 1169  sudo su
+ 1170  history > history.txt
