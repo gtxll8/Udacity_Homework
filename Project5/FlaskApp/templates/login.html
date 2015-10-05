@@ -1,0 +1,35 @@
+{# login.html #}
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+{% block body %}
+
+       <link rel=stylesheet type=text/css href="{{ url_for('static', filename='signin.css') }}">
+       <link rel=stylesheet type=text/css href="{{ url_for('static', filename='bootstrap.min.css') }}">
+
+    {# Check for errors. #}
+    {% if result.error %}
+        <h2>Damn that error: {{ result.error.message }}</h2>
+    {% endif %}
+     <div class="container">
+    {# Welcome the user. #}
+    {% if result.user %}
+        <h1>Hi {{ result.user.name }}</h1>
+    {% endif %}
+</div>
+
+<div class="jumbotron">
+    <div class="container">
+        <h2>Please Note</h2>
+
+        <p class="lead">We will not share any information about you or your activities collected
+            by MICROMARKET with a linked social-networking service without your approval.
+            This means we will not post anything to your GitHub account, Google+ account,
+            or Twitter feed unless you give us permission to do so, and we will not contact
+            your friends or followers at any time.</p>
+        <a class="btn btn-primary btn-lg btn-block" onclick="opener.location.href ='/admin'; window.close();">Go to your
+            admin page</a>
+    </div>
+</div>
+
+{% endblock body %}
